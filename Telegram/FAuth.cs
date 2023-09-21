@@ -64,7 +64,6 @@ namespace Telegram
                         using (StreamReader reader = new StreamReader(stream))
                         {
                             string result = reader.ReadToEnd();
-                            MessageBox.Show(result);
                             // Парсинг code_hash из ответа сервера
                             int startIndex = result.IndexOf("\"code_hash\":\"") + 13;
                             int endIndex = result.IndexOf("\"", startIndex);
@@ -100,22 +99,51 @@ namespace Telegram
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
 
-            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            try
             {
-                using (Stream stream = response.GetResponseStream())
+                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 {
-                    using (StreamReader reader = new StreamReader(stream))
+                    using (Stream stream = response.GetResponseStream())
                     {
-                        string result = reader.ReadToEnd();
-                        // Парсинг auth_token из ответа сервера
-                        int startIndex = result.IndexOf("\"auth_token\":\"") + 14;
-                        int endIndex = result.IndexOf("\"", startIndex);
-                        string authToken = result.Substring(startIndex, endIndex - startIndex);
-                        return authToken;
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            string result = reader.ReadToEnd();
+                            MessageBox.Show(result);
+
+                            int startIndex = result.IndexOf("\"auth_token\":\"");
+                            if (startIndex >= 0)
+                            {
+                                startIndex += 14; // Добавляем длину подстроки "\"auth_token\":\""
+                                int endIndex = result.IndexOf("\"", startIndex);
+                                if (endIndex >= 0)
+                                {
+                                    string authToken = result.Substring(startIndex, endIndex - startIndex);
+                                    return authToken;
+                                }
+                                else
+                                {
+                                    // Обработка ошибки: закрывающая кавычка не найдена
+                                    MessageBox.Show("Ошибка: закрывающая кавычка для auth_token не найдена.");
+                                    return null; // или выбросьте исключение, если это более подходящий вариант
+                                }
+                            }
+                            else
+                            {
+                                // Обработка ошибки: подстрока auth_token не найдена
+                                MessageBox.Show("Ошибка: подстрока auth_token не найдена.");
+                                return null; // или выбросьте исключение, если это более подходящий вариант
+                            }
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                // Обработка ошибки при выполнении запроса
+                MessageBox.Show($"Ошибка при выполнении запроса: {ex.Message}");
+                return null; // или выбросьте исключение, если это более подходящий вариант
+            }
         }
-
+        
     }
 }
