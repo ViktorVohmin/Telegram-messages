@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>1486146469-telegram_79439.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="1486146469-telegram_79439.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Laraue.Telegram.NET.Authentication" Version="1.1.3" />
+    <PackageReference Include="TelegramAspNetCoreAuth" Version="2023.5.16" />
+  </ItemGroup>
+
+</Project>

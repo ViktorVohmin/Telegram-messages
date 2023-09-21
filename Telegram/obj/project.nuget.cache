@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "cj0N2z1kFdxL+7HYxDYLWRGb03WL17z4r+c0TwwTzKrePH1O6BnoHupAB1eYq332hFdlgEnMy05zzn8x4M0N4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Viktor\\Desktop\\Telegram\\Telegram\\Telegram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Viktor\\.nuget\\packages\\laraue.core.exceptions\\6.0.4\\laraue.core.exceptions.6.0.4.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\laraue.core.threading\\6.0.4\\laraue.core.threading.6.0.4.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\laraue.telegram.net.abstractions\\1.1.3\\laraue.telegram.net.abstractions.1.1.3.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\laraue.telegram.net.authentication\\1.1.3\\laraue.telegram.net.authentication.1.1.3.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\laraue.telegram.net.core\\1.1.3\\laraue.telegram.net.core.1.1.3.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.11\\microsoft.aspnetcore.authentication.jwtbearer.6.0.11.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512",
+    "C:\\Users\\Viktor\\.nuget\\packages\\telegramaspnetcoreauth\\2023.5.16\\telegramaspnetcoreauth.2023.5.16.nupkg.sha512"
+  ],
+  "logs": []
+}
